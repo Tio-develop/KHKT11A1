@@ -1,0 +1,81 @@
+body{
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background-color: rgba(192,216,223, 0.4);
+}
+
+table {
+        border-collapse: collapse;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-radius: 10px;
+    }
+    .white {
+        color: #fff;
+    }
+    
+    th {
+        background-color: #827e7e;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #d7d3d3;
+    }
+    
+    button {
+        padding: 8px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        box-shadow:#827e7e 2px 2px;
+    }
+
+    input {
+        border-radius: 5px;
+    }
+    
+    button:hover {
+        background-color: #3e8e41;
+        cursor: pointer;
+        box-shadow:#827e7e 5px 5px;
+        transition: all 1s;
+        transform: scale(1.1);
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+footer {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    margin: 1px;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #797ff6;
+}
+
+a:hover {
+    color: #4CAF50;
+}
