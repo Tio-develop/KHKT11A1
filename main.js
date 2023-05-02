@@ -14,12 +14,5 @@ function tinhDiemTrungBinh() {
     var diemTrungBinh = (toan + ly + hoa + anh + sinh + gdcd + congNghe + gdqp + tin + dia + lichSu + van) / 12;
     
     document.getElementById("diem-trung-binh").innerHTML = diemTrungBinh.toFixed(2);
-    if (diemTrungBinh >= 8) {
-        alert("Chúc mừng bạn!Điểm Trung Bình trên 8")
-    } else if (diemTrungBinh >= 7.9 & diemTrungBinh <= 8) {
-        alert("Tiếc quá bạn chỉ thiếu 0.1 thui! Cố gắng nha")
-    } else if (diemTrungBinh <= 7) {
-        alert("Điểm trung bình bạn hơi thấp, cố gắng hơn nha")
-    };
 };
 

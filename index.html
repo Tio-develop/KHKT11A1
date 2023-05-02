@@ -1,85 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./main.js">
-    <link rel="shortcut icon" type="image/png" href="./photo/Untitled-1.png"/>
-    <title>ĐTB 11A1</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-        <table>
-            <tr>
-            <th class="white">Môn học</th>
-            <th class="white">Điểm</th>
-            </tr>
-            <tr>
-            <td>Toán</td>
-            <td><input type="number" min="0" max="10" id="toan"></td>
-            </tr>
-            <tr>
-            <td>Lý</td>
-            <td><input type="number" min="0" max="10" id="ly"></td>
-            </tr>
-            <tr>
-            <td>Hóa</td>
-            <td><input type="number" min="0" max="10" id="hoa"></td>
-            </tr>
-            <tr>
-            <td>Anh</td>
-            <td><input type="number" min="0" max="10" id="anh"></td>
-            </tr>
-            <tr>
-            <td>Văn</td>
-            <td><input type="number" min="0" max="10" id="van"></td>
-            </tr>
-            <tr>
-            <td>GDCD</td>
-            <td><input type="number" min="0" max="10" id="gdcd"></td>
-            </tr>
-            <tr>
-            <td>GDQP</td>
-            <td><input type="number" min="0" max="10" id="gdqp"></td>
-            </tr>
-            <tr>
-            <td>Tin</td>
-            <td><input type="number" min="0" max="10" id="tin"></td>
-            </tr>
-            <tr>
-            <td>Công Nghệ</td>
-            <td><input type="number" min="0" max="10" id="cong-nghe">       
-            </td>
-            </tr>
-            <tr>
-            <td>Địa</td>
-            <td><input type="number" min="0" max="10" id="dia"></td>
-            </tr>
-            <tr>
-            <td>Lịch sử</td>
-            <td><input type="number" min="0" max="10" id="lich-su"></td>
-            </tr>
-            <tr>
-            <td>Sinh</td>
-            <td><input type="number" min="0" max="10" id="sinh"></td>
-            </tr>
-            <tr>
-            <td colspan="2"><button onclick="tinhDiemTrungBinh()">Tính điểm trung bình</button></td>
-            </tr>
-            <tr>
-            <td>Điểm trung bình</td>
-            <td><span id="diem-trung-binh"></span></td>
-            </tr>
-        </table>
-        <footer>
-            <h1>Đây là sản phẩm Khoa Học Kĩ Thuật của Chi Đoàn lớp 11A1</h1>
-            <h1> Thuộc Phần Mềm Tin Học</h1>
-            <h2>Tác giả: <a href="https://www.facebook.com/tiodev71/">Đình Thọ</a> 👈</h2>
-        </footer>
-        <script src="./main.js"></script>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./main.js">
+        <link rel="shortcut icon" type="image/png" href="./photo/Untitled-1.png"/>
+        <title>ĐTB 11A1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+    ">
+    </head>
+    <body>
+        <nav class="nav-container">
+            <img class="nav-container__logo" src="./photo/0d8eb291085ad7048e4b.jpg" alt="">
+            <i class="fas fa-heart icon"></i>
+        </nav>
+
+        <header class="header-container">
+            <h1 class="header-container__text">CÔNG CỤ</h1>
+            <div class="header-container__box">
+                <h1>TÍNH ĐIỂM TRUNG BÌNH</h1>
+            </div>
+            <h1 class="header-container__text">CHI ĐOÀN 11A1</h1>
+        </header>
+
+            <table class="table-container center">
+                <tr>
+                    <td>Toán</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="toan"></td>
+                    </tr>
+                <tr>
+                    <td>Lý</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="ly"></td>
+                    </tr>
+                    <td>Hóa</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="hoa"></td>
+                    </tr>
+                    <tr>
+                    <td>Anh</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="anh"></td>
+                    </tr>
+                    <tr>
+                    <td>Văn</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="van"></td>
+                    </tr>
+                    <tr>
+                    <td>GDCD</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="gdcd"></td>
+                    </tr>
+                    <tr>
+                    <td>GDQP</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="gdqp"></td>
+                    </tr>
+                    <tr>
+                    <td>Tin</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="tin"></td>
+                    </tr>
+                    <tr>
+                    <td>Công Nghệ</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="cong-nghe">       
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Địa</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="dia"></td>
+                    </tr>
+                    <tr>
+                    <td>Lịch sử</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="lich-su"></td>
+                    </tr>
+                    <tr>
+                    <td>Sinh</td>
+                    <td><i class="fas fa-genderless"></i></td>
+                    <td><input placeholder="0" type="number" min="0" max="10" id="sinh"></td>
+                    </tr>
+                    <tr>
+                        <tr class="center">
+                            <td class="tb" colspan="2"><button onclick="tinhDiemTrungBinh()">XEM KẾT QUẢ</button></td>
+                        </tr>
+                        
+                        <tr class="bottom">
+                            <td>Điểm trung bình</td>
+                            <td><span id="diem-trung-binh"></span></td>
+                        </tr>
+                    </table>
+
+                    
+            <footer>
+                <h1>Đây là sản phẩm Khoa Học Kĩ Thuật của Chi Đoàn lớp 11A1</h1>
+                <h1> Thuộc Phần Mềm Tin Học</h1>
+                <h2>Coder: <a href="https://www.facebook.com/tiodev71/">Đình Thọ</a> 👈</h2>
+                <h2>Designer: <a href="https://www.facebook.com/ithaiss.me">Đình Thái</a> 👈</h2>
+            </footer>
+            <script src="./main.js"></script>
+    </body>
+    </html>

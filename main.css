@@ -1,81 +1,153 @@
-body{
-    font-family: 'Schibsted Grotesk', sans-serif;
-    background-color: rgba(192,216,223, 0.4);
-}
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Roboto+Mono:ital,wght@1,200&family=Roboto:ital,wght@0,300;1,400&family=Sofia+Sans:ital,wght@1,100&display=swap');
 
-table {
-        border-collapse: collapse;
+
+    body{
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgb(255,255,255);
+    }
+
+    .nav-container{
+        display: flex;
+        padding: 10px 50px;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .nav-container__logo{
+        max-width: 80px;
+        height: auto;
+    }
+
+    .icon{
+        font-size: 1.5rem;
+        color: rgb(128,128,128);
+    }
+
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-container__box {
+        background-color: rgb(128,128,128);
+        width: auto;
+        max-width: 300px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .header-container__box h1 {
+        color: rgb(255,255,255);
+        margin: 0;
+        padding: 10px 20px;
+        font-weight: 900;
+    }
+
+    .header-container__text {
+        color: rgb(128,128,128);
+        opacity: 0.6;
+        font-size: 1.2rem;
+    }
+
+    .table-container {
+        border: 1px solid rgb(116, 116, 116);
+        border-radius: 50px;
+        margin-top: 10px;
+        height: 100vh;
         width: 100%;
-        border-radius: 10px;
-    }
-    
-    th, td {
-        padding: 8px;
-        text-align: left;
-        border-radius: 10px;
-    }
-    .white {
-        color: #fff;
-    }
-    
-    th {
-        background-color: #827e7e;
-    }
-    
-    tr:nth-child(even) {
-        background-color: #d7d3d3;
-    }
-    
-    button {
-        padding: 8px;
-        font-size: 16px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-weight: 600;
-        box-shadow:#827e7e 2px 2px;
+        max-width: 1200px;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
-    input {
-        border-radius: 5px;
+    .table-container tr td{
+        text-align: center;
+        font-weight: 900;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-left: 10px;
     }
-    
-    button:hover {
-        background-color: #3e8e41;
-        cursor: pointer;
-        box-shadow:#827e7e 5px 5px;
+
+    .table-container tr td i {
+        color: rgb(128,128,128);
+    }
+
+    .table-container tr td input {
+        border-radius: 50px;
+        border-color: rgba(116, 116, 116, 0.8);
+        margin-right: 10px;
+        margin-left: 45px;
+        width: 100%;
+        max-width: 60px;
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        margin: 1px;
+        font-size: 1.2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #808080;
+    }
+
+    a:hover {
+        color: #31a497;
+    }
+
+    .tb button {
+        background-color: rgb(128,128,128);
+        border-color: transparent;
+        color: aliceblue;
+        padding: 5px 30px;
+        font-size: 1.3rem;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 30px;
+        font-weight: 900;
+    }
+
+    .tb button:hover {
+        cursor: pointer;        
         transition: all 1s;
         transform: scale(1.1);
     }
-    
-    span {
-        font-weight: bold;
+
+    .center {
     }
-    
-footer {
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-h1 {
-    font-size: 1.3rem;
-}
+    .tb {
+        padding-bottom: 20px;
+    }
+    .bottom td {
+        padding: 0 !important;
+        padding-bottom: 20px !important;
+        margin-bottom: 50px !important;
+    }
 
-h2 {
-    margin: 1px;
-    font-size: 1.2rem;
-}
 
-a {
-    text-decoration: none;
-    color: #797ff6;
-}
+    @media screen and (max-width: 600px) {
+        .table-container {
+            max-width: 350px;
+        }
 
-a:hover {
-    color: #4CAF50;
-}
+        .tb button {
+            font-size: 1rem;
+        }
+    }
